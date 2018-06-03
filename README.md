@@ -14,7 +14,7 @@ Topics/Chapters proposals:
 4b) Premined coins
 5) From CPU mining to ASIC 
 5a) Solar power, hydroelecrity, air cooling in Iceland
-6) Secret mining 
+6) On-chain scaling vs off-chain (LN,Plasma)
 6a) Cloud Mining 
 6b) Nicehash 
 7) Mining Ban (....China 2017, Venezuela 2018 ....)
