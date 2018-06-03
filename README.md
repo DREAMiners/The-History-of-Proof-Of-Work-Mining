@@ -4,7 +4,7 @@ Topics/Chapters proposals:
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) Why proof of work?
 2) Bitcoin Network Growth
-3) Difficulty adjustment 3a) Mining Pools
+3) Difficulty adjustment 3a) Mining Pools 3b) Transactions fees
 4a) 51% and other attack vectors
 4) Bitcoin forks and the new POW algorithms
 5) From CPU mining to ASIC 
