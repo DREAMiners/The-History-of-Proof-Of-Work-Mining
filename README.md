@@ -3,7 +3,7 @@ Topics/Chapters proposals:
 
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 2) Bitcoin Network Growth
-3) Difficulty adjustment
+3) Difficulty adjustment 3a) Mining Pools
 4) Bitcoin forks and the new POW algorithms
 5) From CPU mining to ASIC 
 5a) Solar power, hydroelecrity, air cooling in Iceland
