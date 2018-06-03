@@ -14,3 +14,4 @@ Topics/Chapters proposals:
 8) ASIC resistance
 9) FPGA in 2018 and how the history repeats itself
 10) Mining profit calculator
+11) Different mining strategies
