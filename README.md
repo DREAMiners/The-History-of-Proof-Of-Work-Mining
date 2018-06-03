@@ -33,7 +33,7 @@ Topics/Chapters proposals:
 14) ASIC algorithms: SHA-256, Scrypt, X11, BLAKE (2b), QUARK, QUBIT, MYR-GROESTL, SKEIN, LBRY, BLAKE (14r), PASCAL, X11 GHOST, CRYPTONIGHT (GPU->ASIC history)
 15) GPU algorithms: ETHASH GROESTL PHI1612 CRYPTONIGHT, CRYPTONIGHTv7, EQUIHASH, LYRA2REv2, NEOSCRYPT, TIMETRAVEL10, X16R, SKUNHASH, NIST5, XEVAN
 16) Multi-algorithm coins
-17) Competetive advantage in mining (OhGodAnETHlargementPill, Asic boost etc)
+17) Competitive advantage (OhGodAnETHlargementPill, Asic boost etc)
 18) Mining software, dedicated distros
 19) Windows vs Linux mining, drivers, stability, hashrates
 19) ProgPoW - Programmatic Proof-of-Work and ASIC resistance
