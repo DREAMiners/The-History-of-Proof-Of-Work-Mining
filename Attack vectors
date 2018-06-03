@@ -1,0 +1,19 @@
+-Selfish Mining
+-Stubborn Mining Model
+-Selfish Mining Defense
+-Game-Theory Based 4 Censorship
+-51% Attacks and 5 Collusions
+Reference:
+https://cyber.stanford.edu/sites/default/files/20180124_bpase_game_theoretical_attacks_on_bitcoin.pdf
+
+- Incentivizing Double-Spend Collusion in Bitcoin   https://www.cs.umd.edu/~gasarch/reupapers/katzbitcoin16.pdf
+- Smart Contracts for Bribing Miners http://homepages.cs.ncl.ac.uk/patrick.mccorry/minerbribery.pdf
+- Incentivizing Blockchain Forks via Whale Transactions https://www.cs.umd.edu/~jkatz/papers/whale-txs.pdf
+- Antbleed https://www.coindesk.com/antbleed-bitcoins-newest-new-controversy-explained/
+- https://www.researchgate.net/publication/307507694_Why_Buy_When_You_Can_Rent
+- On the Instability of Bitcoin Without the Block Reward  http://randomwalker.info/publications/mining_CCS.pdf
+- FruitChains: A Fair Blockchain  - https://dl.acm.org/citation.cfm?id=3087809
+- Eclipse attack vs. Sybil attack  https://bitcoin.stackexchange.com/questions/61151/eclipse-attack-vs-sybil-attack
+- Eclipse Attacks on Bitcoin’s Peer-to-Peer Network  https://eprint.iacr.org/2015/263.pdf
+
+
