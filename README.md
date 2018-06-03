@@ -17,6 +17,8 @@ Topics/Chapters proposals:
 6) On-chain scaling vs off-chain (colored coins, LN, Plasma, payment channels, sidechains)
 6a) Cloud Mining 
 6b) Nicehash 
+6c) 6GPU -> 12/13 GPU -> 19/20 PCIe Motherboards
+6d) GPU overclocking, 
 7) Mining Ban (....China 2017, Venezuela 2018 ....)
 8) ASIC resistance
 9) FPGA in 2018 and how the history repeats itself
@@ -24,3 +26,4 @@ Topics/Chapters proposals:
 11) Different mining strategies
 12) Who controls bitcoin? 13a) UASF, flags etc
 13) All Bitcoin chain splits
+14) The real cost of 1h POW mining attack on given network
