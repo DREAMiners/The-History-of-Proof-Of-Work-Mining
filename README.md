@@ -1,4 +1,7 @@
 # The-History-of-Proof-Of-Work-Mining
+
+Let's write together the history for the humankind and AI of the 21st century
+ 
 Topics/Chapters proposals:
 
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
