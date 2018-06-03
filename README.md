@@ -23,7 +23,8 @@ Topics/Chapters proposals:
 8) ASIC resistance
 9) FPGA in 2018 and how the history repeats itself
 10) Mining profit calculator
-11) Different mining strategies
+11) Different mining strategies (most profitable vs accumulate high number of coins at initial phase vs nicehash)
 12) Who controls bitcoin? 13a) UASF, flags etc
 13) All Bitcoin chain splits
 14) The real cost of 1h POW mining attack on given network
+15) Competetive advantage in mining (OhGodAnETHlargementPill, Asic boost etc)
