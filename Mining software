@@ -1,0 +1,27 @@
+Claymore's Dual Ethereum + Decred/Siacoin/Lbry/Pascal/Blake2s/Keccak AMD+NVIDIA GPU Miner  https://bitcointalk.org/index.php?topic=1433925.0
+
+
+#XMR-STAK 
+
+XMR-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NVIDIA gpus and can be used to mine the crypto currency: 
+Monero
+Aeon
+BBSCoin
+Croat
+Edollar
+Electroneum - forked 30th May 2018 - Asic resistance - https://electroneum.com/2018/04/25/blockchain-update/
+Graft
+Haven
+Intense
+IPBC
+Karbo
+Masari
+Sumokoin
+TurtleCoin
+
+If your prefered coin is not listed, you can chose one of the following algorithms:
+
+Cryptonight - 2 MiB scratchpad memory
+Cryptonight-light - 1 MiB scratchpad memory
+
+https://github.com/fireice-uk/xmr-stak BENCHMARKS: https://www.xmrstak.com
