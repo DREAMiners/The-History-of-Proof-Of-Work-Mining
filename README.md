@@ -27,7 +27,6 @@ Topics/Chapters proposals:
 11) Different mining strategies (most profitable vs accumulate high number of coins at initial phase vs nicehash)
 12) Who controls bitcoin? 13a) UASF, flags etc
 13) Chain Splits/Forks
-
 13a) ASIC algorithms SHA-256, Scrypt, X11, BLAKE (2b), QUARK, QUBIT, MYR-GROESTL, SKEIN, LBRY, BLAKE (14r), PASCAL, X11 GHOST, CRYPTONIGHT (GPU->ASIC history)
 13b) GPU algoriths ETHASH GROESTL PHI1612 CRYPTONIGHT, CRYPTONIGHTv7, EQUIHASH, LYRA2REv2, NEOSCRYPT, TIMETRAVEL10, X16R, SKUNHASH, NIST5, XEVAN
 13C) Multi-algorithm coins
