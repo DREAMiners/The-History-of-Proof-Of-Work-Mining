@@ -23,18 +23,19 @@ Topics/Chapters proposals:
 6a) Cloud Mining 
 6b) Nicehash 
 6c) 6GPU -> 12/13 GPU -> 19/20 PCIe Motherboards
-7) GPU overclocking, 
+7) GPU overclocking bios editing, undervolting 
 8) Mining Ban (....China 2017, Venezuela 2018 ....)
 9) FPGA in 2018 and how the history repeats itself
 10) Mining profitability calculators
 11) Different mining strategies (most profitable vs accumulate high number of coins at initial phase vs nicehash)
 12) Who controls bitcoin? 13a) UASF, flags etc
 13) Chain Splits/Forks
-13a) ASIC algorithms SHA-256, Scrypt, X11, BLAKE (2b), QUARK, QUBIT, MYR-GROESTL, SKEIN, LBRY, BLAKE (14r), PASCAL, X11 GHOST, CRYPTONIGHT (GPU->ASIC history)
-13b) GPU algoriths ETHASH GROESTL PHI1612 CRYPTONIGHT, CRYPTONIGHTv7, EQUIHASH, LYRA2REv2, NEOSCRYPT, TIMETRAVEL10, X16R, SKUNHASH, NIST5, XEVAN
-13C) Multi-algorithm coins
-14) Competetive advantage in mining (OhGodAnETHlargementPill, Asic boost etc)
-15) Mining software, dedicated distros
-16) ProgPoW - Programmatic Proof-of-Work and ASIC resistance
+14) ASIC algorithms: SHA-256, Scrypt, X11, BLAKE (2b), QUARK, QUBIT, MYR-GROESTL, SKEIN, LBRY, BLAKE (14r), PASCAL, X11 GHOST, CRYPTONIGHT (GPU->ASIC history)
+15) GPU algorithms: ETHASH GROESTL PHI1612 CRYPTONIGHT, CRYPTONIGHTv7, EQUIHASH, LYRA2REv2, NEOSCRYPT, TIMETRAVEL10, X16R, SKUNHASH, NIST5, XEVAN
+16) Multi-algorithm coins
+17) Competetive advantage in mining (OhGodAnETHlargementPill, Asic boost etc)
+18) Mining software, dedicated distros
+19) Windows vs Linux mining, drivers, stability, hashrates
+19) ProgPoW - Programmatic Proof-of-Work and ASIC resistance
 98) extras: POS mining, social mining (apps- LIT, bit.tube)
 99) References - each chapter should contain references at the bottom
