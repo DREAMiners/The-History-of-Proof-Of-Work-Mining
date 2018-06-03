@@ -5,7 +5,7 @@ Topics/Chapters proposals:
 1a) What Satoshi said about POW 
 1b) Why proof of work? 1c) Blockchain vs DAG
 2) Bitcoin Network Growth
-3) Difficulty adjustment 
+3) Difficulty adjustment 3b) Merged mining
 3a) Mining Pools 
 3b) Transactions fees
 4a) 51% and other attack vectors
@@ -22,4 +22,5 @@ Topics/Chapters proposals:
 9) FPGA in 2018 and how the history repeats itself
 10) Mining profit calculator
 11) Different mining strategies
-12) Who controls bitcoin?
+12) Who controls bitcoin? 13a) UASF, flags etc
+13) All Bitcoin chain splits
