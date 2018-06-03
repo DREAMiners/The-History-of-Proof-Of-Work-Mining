@@ -13,4 +13,4 @@ Topics/Chapters proposals:
 7) Mining Ban (....China 2017, Venezuela 2018 ....)
 8) ASIC resistance
 9) FPGA in 2018 and how the history repeats itself
-
+10) Mining profit calculator
