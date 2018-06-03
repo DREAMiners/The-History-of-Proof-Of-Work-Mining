@@ -1,6 +1,6 @@
 # The-History-of-Proof-Of-Work-Mining
 
-Let's write together the history for the humankind and AI of the 21st century
+Let's write together the history of POW for the humankind and AI of the 21st century
  
 Topics/Chapters proposals:
 
