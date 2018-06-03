@@ -9,7 +9,7 @@ Topics/Chapters proposals:
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) What Satoshi said about POW 
 1b) Why proof of work? 1c) Blockchain vs DAG
-2) Bitcoin Network Growth
+2) Bitcoin Blockchain Growth      transactions, size, hashrate, pools, adoption 
 3) Difficulty adjustment 
 3a) Merged mining 
 3b) Dual mining
