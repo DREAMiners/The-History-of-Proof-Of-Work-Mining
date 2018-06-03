@@ -33,3 +33,4 @@ Topics/Chapters proposals:
 14) Competetive advantage in mining (OhGodAnETHlargementPill, Asic boost etc)
 15) Mining software, dedicated distros
 16) extras: POS mining, social mining (apps- LIT, bit.tube)
+17) References
