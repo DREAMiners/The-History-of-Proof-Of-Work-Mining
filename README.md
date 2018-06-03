@@ -6,7 +6,7 @@ Topics/Chapters proposals:
 2) Bitcoin Network Growth
 3) Difficulty adjustment 3a) Mining Pools 3b) Transactions fees
 4a) 51% and other attack vectors
-4) Bitcoin forks and the new POW algorithms 4) Premined coins
+4) Bitcoin forks and the new POW algorithms 4a) POW vs other consensus mechanisms 4b) Premined coins
 5) From CPU mining to ASIC 
 5a) Solar power, hydroelecrity, air cooling in Iceland
 6) Secret mining 6a) Cloud Mining 6b) Nicehash 
