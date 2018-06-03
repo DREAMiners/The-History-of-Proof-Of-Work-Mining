@@ -8,6 +8,6 @@ Topics/Chapters proposals:
 5) From CPU mining to ASIC 
 6) Secret mining
 7) Mining Ban
-8 )ASIC resistance
+8) ASIC resistance
 9) FPGA in 2018 and how the history repeats itself
 10) Venezuela forbids mining crypto, control of mining equipment on the borders
