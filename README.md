@@ -6,6 +6,7 @@ Topics/Chapters proposals:
 3) Difficulty adjustment
 4) Bitcoin forks and the new POW algorithms
 5) From CPU mining to ASIC 
+5a) Solar power, hydroelecrity, air cooling in Iceland
 6) Secret mining
 7) Mining Ban
 8) ASIC resistance
