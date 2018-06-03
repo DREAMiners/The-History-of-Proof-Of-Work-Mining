@@ -8,7 +8,7 @@ Topics/Chapters proposals:
 
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) What Satoshi said about POW 
-1b) Why proof of work? 1c) Blockchain vs DAG
+1b) Why proof of work? mining profit driven vs support of the project you believe in
 2) Bitcoin Blockchain Growth      transactions, size, hashrate, pools, adoption 
 3) Difficulty adjustment 
 3a) Merged mining 
@@ -37,5 +37,6 @@ Topics/Chapters proposals:
 18) Mining software, dedicated distros
 19) Windows vs Linux mining, drivers, stability, hashrates
 19) ProgPoW - Programmatic Proof-of-Work and ASIC resistance
+20) Blockchain vs DAG
 98) extras: POS mining, social mining (apps- LIT, bit.tube)
 99) References - each chapter should contain references at the bottom
