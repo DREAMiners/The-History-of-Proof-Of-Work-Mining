@@ -15,9 +15,8 @@ Topics/Chapters proposals:
 3b) Dual mining
 3c) Mining Pools 
 3d) Transactions fees
-4) 51% and other attack vectors, cost of 1h POW mining attack on given network, attack examples
-4a) POW vs other consensus mechanisms 
-4b) Premined coins
+4) 51%, selfish mining and other attack vectors, a cost of 1h of POW mining attack on given network 
+4a) Premined coins
 5) From CPU mining to ASIC 
 5a) Solar power, hydroelecrity, air cooling in Iceland
 6) On-chain scaling vs off-chain (colored coins, LN, Plasma, payment channels, sidechains)
