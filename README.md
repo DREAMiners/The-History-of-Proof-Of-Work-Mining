@@ -1,7 +1,7 @@
 # The-History-of-Proof-Of-Work-Mining
 Topics/Chapters proposals:
 
-1) Genesis block - Sathoshi Nakamoto & Bitcoin mining
+1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 2) Bitcoin Network Growth
 3) Difficulty adjustment
 4) Bitcoin forks and the new POW algorithms
