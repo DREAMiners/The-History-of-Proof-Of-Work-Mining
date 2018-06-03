@@ -3,7 +3,7 @@ Topics/Chapters proposals:
 
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) What Satoshi said about POW 
-1b) Why proof of work?
+1b) Why proof of work? 1c) Blockchain vs DAG
 2) Bitcoin Network Growth
 3) Difficulty adjustment 
 3a) Mining Pools 
@@ -14,7 +14,7 @@ Topics/Chapters proposals:
 4b) Premined coins
 5) From CPU mining to ASIC 
 5a) Solar power, hydroelecrity, air cooling in Iceland
-6) On-chain scaling vs off-chain (LN,Plasma)
+6) On-chain scaling vs off-chain (colored coins, LN, Plasma, payment channels, sidechains)
 6a) Cloud Mining 
 6b) Nicehash 
 7) Mining Ban (....China 2017, Venezuela 2018 ....)
@@ -22,3 +22,4 @@ Topics/Chapters proposals:
 9) FPGA in 2018 and how the history repeats itself
 10) Mining profit calculator
 11) Different mining strategies
+12) Who controls bitcoin?
