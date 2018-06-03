@@ -23,9 +23,8 @@ Topics/Chapters proposals:
 6a) Cloud Mining 
 6b) Nicehash 
 6c) 6GPU -> 12/13 GPU -> 19/20 PCIe Motherboards
-6d) GPU overclocking, 
-7) Mining Ban (....China 2017, Venezuela 2018 ....)
-8) ASIC resistance
+7) GPU overclocking, 
+8) Mining Ban (....China 2017, Venezuela 2018 ....)
 9) FPGA in 2018 and how the history repeats itself
 10) Mining profitability calculators
 11) Different mining strategies (most profitable vs accumulate high number of coins at initial phase vs nicehash)
@@ -36,6 +35,6 @@ Topics/Chapters proposals:
 13C) Multi-algorithm coins
 14) Competetive advantage in mining (OhGodAnETHlargementPill, Asic boost etc)
 15) Mining software, dedicated distros
-16) ProgPoW - Programmatic Proof-of-Work
+16) ProgPoW - Programmatic Proof-of-Work and ASIC resistance
 98) extras: POS mining, social mining (apps- LIT, bit.tube)
 99) References - each chapter should contain references at the bottom
