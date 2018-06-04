@@ -26,7 +26,7 @@ Topics/Chapters proposals:
 7) GPU overclocking bios editing, undervolting 
 8) Mining Ban (....China 2017, Venezuela 2018 ....)
 9) FPGA in 2018 and how the history repeats itself
-10) Mining profitability calculators
+10) Mining profitability calculators and blockchain explorers
 11) Different mining strategies (most profitable vs accumulate high number of coins at initial phase vs nicehash)
 12) Who controls bitcoin? 13a) UASF, flags etc
 13) Chain Splits/Forks
@@ -35,7 +35,7 @@ Topics/Chapters proposals:
 16) Multi-algorithm coins
 17) Competitive advantage (OhGodAnETHlargementPill, Asic boost etc)
 18) Mining software, dedicated distros
-19) Windows vs Linux mining, drivers, stability, hashrates
+19) Windows vs Linux mining, drivers, stability, hashrates, handy cripts, remote monitoring and security
 19) ProgPoW - Programmatic Proof-of-Work and ASIC resistance
 20) Blockchain vs DAG
 98) extras: POS mining, social mining (apps- LIT, bit.tube)
