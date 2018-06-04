@@ -7,7 +7,7 @@ Please watch "EthereumBook Pull Request Tutorial" video by @aantonop on https://
 Topics/Chapters proposals:
 
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
-1a) What Satoshi said about POW 
+1a) Satoshi quotes about mining
 1b) Why proof of work? mining profit driven vs support of the project you believe in
 2) Bitcoin Blockchain Growth      transactions, size, hashrate, pools, adoption 
 3) Difficulty adjustment 
