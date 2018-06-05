@@ -1,8 +1,6 @@
 # "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" 
 ![Genesis](Gensis-block-hash.jpg)
 
-[![brink](https://github.com/DREAMiners/The-History-of-Proof-Of-Work-Mining/blob/master/Gensis-block-hash.jpg)]
-
 
 
 
