@@ -2,7 +2,8 @@
 
 Let's write together the history of POW for the humankind and AI of the 21st century
 
-Please watch "EthereumBook Pull Request Tutorial" video by @aantonop on https://www.youtube.com/watch?v=IBYHohWm_5w
+**Watch a video tutorial from Andreas Antonopoulus on how to contribute ---->**[![picture](https://img.youtube.com/vi/IBYHohWm_5w/1.jpg)](https://www.youtube.com/watch?v=IBYHohWm_5w)
+<hr/>P
  
 Topics/Chapters proposals:
 
