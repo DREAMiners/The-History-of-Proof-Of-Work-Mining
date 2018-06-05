@@ -14,4 +14,12 @@ XMR-Stak is a universal Stratum pool miner. This miner supports CPUs, AMD and NV
  *    cryptonight_v7
  *    # 4MiB scratchpad memory
  *    cryptonight_heavy
-https://github.com/fireice-uk/xmr-stak BENCHMARKS: https://www.xmrstak.com
+CPU: xmrig v2.5.0+, xmr-stak v2.4.3+ with cryptonight_v7 algo
+AMD GPU: xmrig-amd v2.5.0+, xmr-stak v2.4.3+ with cryptonight_v7 algo, Cast XMR Vega v0.9.0+ with --algo=1 switch
+nVidia GPU: xmrig-nvidia v2.5.0+, xmr-stak v2.4.3+ with cryptonight_v7 algo
+BENCHMARKS: https://www.xmrstak.com
+
+
+Reference:
+https://github.com/fireice-uk/xmr-stak
+https://moneroocean.stream/#/help/faq
