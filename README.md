@@ -1,12 +1,19 @@
 # The-History-of-Proof-Of-Work-Mining
 
-Let's write together the history of POW for the humankind and AI of the 21st century
+# Let's write together the history of POW for the humankind and AI of the 21st century
+
+<hr/>
+
 
 **Watch a video tutorial from Andreas Antonopoulus on how to contribute ---->**[![picture](https://img.youtube.com/vi/IBYHohWm_5w/1.jpg)](https://www.youtube.com/watch?v=IBYHohWm_5w)
-<hr/>P
+<hr/>
  
-Topics/Chapters proposals:
+# Topics/Chapters proposals:
 
+| Section | Progress | Content Complete |
+|-------|------|:------:|
+| [BTC Genesis block](BTC_Genesis_block.asciidoc) | # ||
+| [Algorithms+Coins](Algorithms+Coins.asciidoc) | # |  |
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) Satoshi quotes about mining
 1b) Why proof of work? mining profit driven vs support of the project you believe in
@@ -41,3 +48,9 @@ Topics/Chapters proposals:
 20) Blockchain vs DAG
 98) extras: POS mining, social mining (apps- LIT, bit.tube)
 99) References - each chapter should contain references at the bottom
+
+
+
+# Contributing, reviewing and commenting
+
+This book is developed collaboratively and openly, here on Github. We accept comments, contributions and corrections from all.
