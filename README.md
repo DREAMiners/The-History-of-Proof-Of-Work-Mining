@@ -12,7 +12,7 @@
 
 | Section | Progress | Content Complete |
 |-------|------|:------:|
-| [BTC Genesis block](BTC_Genesis_block.asciidoc) | # ||
+| [BTC Genesis block](BTC_Genesis_block) | # ||
 | [Algorithms+Coins](Algorithms+Coins.asciidoc) | # |  |
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) Satoshi quotes about mining
