@@ -12,7 +12,7 @@
 
 | Section | Progress | Content Complete |
 |-------|------|:------:|
-| [Bitcoin Genesis Block](BTC_Genesis_block.asciidoc) | # ||
+| [Bitcoin Genesis Block](Genesis_block.asciidoc) | # ||
 | [Attack Vectors](Attack_Vectors.md) | # |  |
 | [Algorithms & Coins](Algorithms&Coins) | # |  |
 
