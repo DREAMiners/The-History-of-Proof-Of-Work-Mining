@@ -50,8 +50,8 @@ _ If you have >~33% mining power, ***you can lose the race every time and malici
 
  ![picture](block_withold4.png)
 
-
-
+<br />
+<br />
 
 Ghash.io
 The mining pool ghash.io briefly exceeding 50% of the bitcoin network's computing power in July 2014, leading the pool to voluntarily commit to reducing its share of the network. It said in a statement that it would not reach 40% of the total mining power in the future.
@@ -69,8 +69,6 @@ The tangle, a distributed ledger that is fundamentally distinct from a blockchai
 -Selfish Mining Defense
 -Game-Theory Based Censorship
 -51% Attacks and Collusions
-Reference:
-https://cyber.stanford.edu/sites/default/files/20180124_bpase_game_theoretical_attacks_on_bitcoin.pdf
 
 - Incentivizing Double-Spend Collusion in Bitcoin   https://www.cs.umd.edu/~gasarch/reupapers/katzbitcoin16.pdf
 - Smart Contracts for Bribing Miners http://homepages.cs.ncl.ac.uk/patrick.mccorry/minerbribery.pdf
@@ -82,5 +80,6 @@ https://cyber.stanford.edu/sites/default/files/20180124_bpase_game_theoretical_a
 - Eclipse attack vs. Sybil attack  https://bitcoin.stackexchange.com/questions/61151/eclipse-attack-vs-sybil-attack
 - Eclipse Attacks on Bitcoin’s Peer-to-Peer Network  https://eprint.iacr.org/2015/263.pdf
 
-Reference:
+Reference: <br />
 https://www.investopedia.com/terms/1/51-attack.asp#ixzz5HVYLPkf3 
+https://cyber.stanford.edu/sites/default/files/20180124_bpase_game_theoretical_attacks_on_bitcoin.pdf
