@@ -1,13 +1,12 @@
 # "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" 
 ![Genesis](Gensis-block-hash.jpg)
 
+# BITCOIN
 
-
-
-# Genesis block
+***Genesis block***
 A genesis block is the first block of a block chain. Modern versions of Bitcoin number it as block 0, though very early versions counted it as block 1. The genesis block is almost always hardcoded into the software of the applications that utilize its block chain. It is a special case in that it does not reference a previous block, and for Bitcoin and almost all of its derivatives, it produces an unspendable subsidy.
 
-Main network genesis block
+***Main network genesis block***
 Here is a representation of the genesis block as it appeared in a comment in an old version of Bitcoin (line 1613). The first section defines exactly all of the variables necessary to recreate the block. The second section is the block in standard printblock format, which contains shortened versions of the data in the first section.
 ----
 GetHash()      = 0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
@@ -30,7 +29,8 @@ CBlock(hash=000000000019d6, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=
 
 
 
-Hash
+***Hash***
+
 The hash of the genesis block, 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f,[1] has two more leading hex zeroes than were required for an early block.
 
 ***Coinbase***
@@ -45,9 +45,11 @@ This was probably intended as proof that the block was created on or after Janua
 This detail, "second bailout for banks" could also suggest that the fact a supposedly liberal and capitalist system, rescuing banks like that, was a problem for satoshi . . . the choosen topic could have a meaning about bitcoin s purpose . . .
 
 ***Block reward***
+
 The first 50 BTC block reward went to address 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa,[1] though this reward can't be spent due to a quirk in the way that the genesis block is expressed in the code. It is not known if this was done intentionally or accidentally.[4][5][6] It is believed that other outputs sent to this address are spendable, but it is unknown if Satoshi Nakamoto has the private key for this particular address, if one existed at all.
 
 ***Timestamp***
+
 Although the average time between Bitcoin blocks is 10 minutes, the timestamp of the next block is a full 6 days after the genesis block. One interpretation is that Satoshi was working on bitcoin for some time beforehand and the The Times front page prompted him to release it to the public. He then mined the genesis block with a timestamp in the past to match the headline. It is also possible that, since the block's hash is so low, he may have spent 6 days mining it with the same timestamp before proceeding to block 1. The prenet hypothesis suggests that the genesis block was solved on January 3, but the software was tested by Satoshi Nakamoto using that genesis block until January 9, when all the test blocks were deleted and the genesis block was reused for the main network.
 
 
@@ -95,6 +97,90 @@ FFFFFFFF - sequence
 4104678AFDB0FE5548271967F1A67130B7105CD6A828E03909A67962E0EA1F61DEB649F6BC3F4CEF38C4F35504E51EC112DE5C384DF7BA0B8D578A4C702B6BF11D5FAC - pk_script
 00000000 - lock time
 ----
+
+# ETHEREUM
+
+***Genesis***
+
+The genesis block is created using the genesis state file or genesis.json in Geth. This file contains all the data that will be needed to generate block 0, including who starts out with how much ether. Here’s an example of a custom genesis state file that initializes this block.
+
+----
+// genesis.json
+{
+ "alloc": {
+    "0xca843569e3427144cead5e4d5999a3d0ccf92b8e": {
+      "balance": "1000000000000000000000000000"
+    },
+    "0x0fbdc686b912d7722dc86510934589e0aaf3b55a": {
+      "balance": "1000000000000000000000000000"
+    }
+  },
+ "config": {
+   "chainID": 68,
+   "homesteadBlock": 0,
+   "eip155Block": 0,
+   "eip158Block": 0
+ },
+ "nonce": "0x0000000000000000",
+ "difficulty": "0x0400",
+ "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+ "coinbase": "0x0000000000000000000000000000000000000000",
+ "timestamp": "0x00",
+ "parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+ "extraData": "0x43a3dfdb4j343b428c638c19837004b5ed33adb3db69cbdb7a38e1e50b1b82fa",
+ "gasLimit": "0xffffffff"
+}
+----
+***config***
+
+The config struct in genesis.json has to do with setting configuration variables for Ethereum, and has nothing to do with what’s inside block 0. However, these values are important, because they also need to match the configuration information of any other node you want to interact with.
+
+There are three resources we will look at when examining config.
+
+The struct itself in Ethereum’s Go implementation.
+How config is actually initialized when using Ethereum on the mainnet.
+Where the variables are defined from the mainnet initialization.
+Below is the config struct from the first link above.
+
+type ChainConfig struct {
+  ChainId *big.Int `json:"chainId"` // Chain id identifies the current chain and is used for replay protection
+
+  HomesteadBlock *big.Int `json:"homesteadBlock,omitempty"` // Homestead switch block (nil = no fork, 0 = already homestead)
+  DAOForkBlock   *big.Int `json:"daoForkBlock,omitempty"`   // TheDAO hard-fork switch block (nil = no fork)
+  DAOForkSupport bool     `json:"daoForkSupport,omitempty"` // Whether the nodes supports or opposes the DAO hard-fork
+
+  // EIP150 implements the Gas price changes (https://github.com/ethereum/EIPs/issues/150)
+  EIP150Block *big.Int    `json:"eip150Block,omitempty"` // EIP150 HF block (nil = no fork)
+  EIP150Hash  common.Hash `json:"eip150Hash,omitempty"`  // EIP150 HF hash (fast sync aid)
+
+  EIP155Block *big.Int `json:"eip155Block,omitempty"` // EIP155 HF block
+  EIP158Block *big.Int `json:"eip158Block,omitempty"` // EIP158 HF block
+
+  // Various consensus engines
+  Ethash *EthashConfig `json:"ethash,omitempty"`
+  ...
+}
+config: chainID
+
+This exists to tell the world which chain you are on. The mainnet chainID is 1, and it’s a quick way to tell other Ethereum clients “I want to participate on the mainnet chain” rather than “I will be creating my own chain that nobody else should care about.”
+
+chainID was introduced in EIP155. The intention in adding it was to make transactions on the Ethereum network look different from those on the Ethereum classic network. Transactions are signed differently depending on the chainID used.
+
+From the second link above, MainnetChainConfig sets ChainId to a MainNetChainID variable:
+
+// MainnetChainConfig is the chain parameters to run a node on the main network.
+
+MainnetChainConfig = &ChainConfig{
+  ChainId:        MainNetChainID,
+  ...
+}
+That MainNetChainID variable is defined in the utils.go file as 1.
+----
+MainNetChainID = big.NewInt(1) // Mainnet default chain ID
+----
+
+
+
 ----
 References: 
  Block 0. Main chain. 2009-01-03. Hash 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f. Block explorer
@@ -103,4 +189,5 @@ References:
  http://bitcoin.stackexchange.com/questions/10009/why-can-t-the-genesis-block-coinbase-be-spent
  https://www.reddit.com/r/Bitcoin/comments/1nc13r/the_first_50btc_block_reward_cant_be_spend_why/
  https://github.com/bitcoin/bitcoin/blob/9546a977d354b2ec6cd8455538e68fe4ba343a44/src/main.cpp#L1668 - Genesis block transaction treated as a special case in the reference code
+ https://arvanaghi.com/blog/explaining-the-genesis-block-in-ethereum/
  ----
