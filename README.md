@@ -12,8 +12,10 @@
 
 | Section | Progress | Content Complete |
 |-------|------|:------:|
-| [BTC Genesis block](BTC_Genesis_block.md) | # ||
-| [Algorithms+Coins](Algorithms+Coins) | # |  |
+| [Bitcoin Genesis Block](BTC_Genesis_block.md) | # ||
+| [Attack Vectors](Attack_Vectors.md) | # |  |
+| [Algorithms & Coins](Algorithms&Coins) | # |  |
+
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
 1a) Satoshi quotes about mining
 1b) Why proof of work? mining profit driven vs support of the project you believe in
