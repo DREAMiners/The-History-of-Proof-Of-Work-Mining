@@ -141,7 +141,7 @@ The struct itself in Ethereum’s Go implementation.
 How config is actually initialized when using Ethereum on the mainnet.
 Where the variables are defined from the mainnet initialization.
 Below is the config struct from the first link above.
-
+----
 type ChainConfig struct {
   ChainId *big.Int `json:"chainId"` // Chain id identifies the current chain and is used for replay protection
 
@@ -160,6 +160,7 @@ type ChainConfig struct {
   Ethash *EthashConfig `json:"ethash,omitempty"`
   ...
 }
+----
 config: chainID
 
 This exists to tell the world which chain you are on. The mainnet chainID is 1, and it’s a quick way to tell other Ethereum clients “I want to participate on the mainnet chain” rather than “I will be creating my own chain that nobody else should care about.”
@@ -169,17 +170,131 @@ chainID was introduced in EIP155. The intention in adding it was to make transac
 From the second link above, MainnetChainConfig sets ChainId to a MainNetChainID variable:
 
 // MainnetChainConfig is the chain parameters to run a node on the main network.
-
+----
 MainnetChainConfig = &ChainConfig{
   ChainId:        MainNetChainID,
   ...
 }
+----
+
 That MainNetChainID variable is defined in the utils.go file as 1.
 ----
 MainNetChainID = big.NewInt(1) // Mainnet default chain ID
 ----
 
+config: HomesteadBlock
 
+HomesteadBlock, when set to 0, means you will be using the Homestead release of Ethereum. This is expected, and the mainnet gensis configuration also has this set to 0.
+
+config: DAOForkBlock
+
+The block number where the Decentralized Autonomous Organization (DAO) fork takes place.
+
+Some background: In 2016, the DAO created a wildly successful smart contract for funding dApps and providing contributors a sort of equity stake in those dApps through DAO tokens. This contract was a novel idea that raised unprecedented amounts of ether.
+
+Unfortuneately, an attacker discovered an attack vector that allowed ether to be withdrawn from the contract multiple times in exchange for the same DAO tokens. Millions were stolen.
+
+Ultimately, a majority of Ethereum users voted to create a hard fork in the blockchain that would invalidate what the attackers did, and the contract would be updated. This was a controversial decision, as the anti-fork faction (rightfully) claimed it set a dangerous precedent for the future: if the majority of users don’t like any particular outcome, there was now a precedent for undoing it.
+
+Since the majority voted to proceed with this fork, the DAOForkBlock variable was born, and it occured on the 1920000th block in the mainnet. Here is the variable’s definition in Geth:
+----
+// MainNetDAOForkBlock is the block number where the DAO hard-fork commences on
+// the Ethereum main network.
+var MainNetDAOForkBlock = big.NewInt(1920000)
+----
+Thus, any block mined after this one would have to follow the protocols established by this new fork, and would be rejected otherwise. If we were creating a local Ethereum chain to test on, we might set this value to 0 so that we get the most up-to-date transaction behavior from the get-go rather than use an outdated protocol for the first 1919999 blocks.
+
+config: DAOForkBlockSupport
+
+A boolean value that confirms whether the node abides by the DAO hard fork.
+
+config: EIP150Block
+
+EIP stands for Ethereum Improvement Proposal. Ethereum is open-source, so people make proposals in the form of discussions and code. Some are accepted, others rejected. EIP150 is one such proposal that was accepted.
+
+This EIP took effect on block 2463000, and had mostly to do with increasing gas prices in response to denial-of-service concerns. In the mainnet implementation of config, we see:
+----
+EIP150Block:    MainNetHomesteadGasRepriceBlock // Brandon's comment: 
+                                                // defined as big.NewInt(2463000) 
+----
+config: EIP150Hash
+
+The hash of the EIP150Block, which is needed for fast sync.
+
+config: EIP155Block
+
+EIP155 was accepted to help prevent replay attacks.
+
+config: EIP158Block
+
+EIP158 was accepted to change how Ethereum clients deal with empty accounts. This new protocol began treating them as nonexistent, saving space on the blockchain.
+
+config: Ethash
+
+The Proof of Work mining protocol for mainnet. In mainnet, this config variable is initialized like so:
+----
+  // MainnetChainConfig is the chain parameters to run a node on the main network.
+  MainnetChainConfig = &ChainConfig{
+    ...
+    Ethash:         new(EthashConfig),
+  }
+----
+This simply tells the client we’re using Ethash, Ethereum’s Proof of Work algorithm, for mining blocks.
+
+Now that we’re done looking at the config variable, we can examine the rest of the genesis.json file.
+
+alloc
+
+This is the field that determines who starts out with how many ether to start the blockchain. In the Ethereum mainnet, this consisted of all the lucky ducklings that participated in the Ethereum presale. Every time we fire up Ethereum on the mainnet, we recreate this first block and all those initial transactions to those individuals.
+
+Here are some of the addresses in the alloc section of the mainnet genesis state file:
+----
+{
+  "alloc": {
+    "3282791d6fd713f1e94f4bfd565eaa78b3a0599d": {
+      "balance": "1337000000000000000000"
+    },
+    "17961d633bcf20a7b029a7d94b7df4da2ec5427f": {
+      "balance": "229427000000000000000"
+    },
+    "493a67fe23decc63b10dda75f3287695a81bd5ab": {
+      "balance": "880000000000000000000"
+    },
+    "01fb8ec12425a04f813e46c54c05748ca6b29aa9": {
+      "balance": "259800000000000000000"
+    }
+    ...
+}
+----
+
+difficult
+
+This value determines how hard it is to mine a block. Different blockchain technologies use different mining algorithms – Ethereum’s mainnet still uses Proof of Work as of this writing. difficulty can be interpreted by its reciprocal; in other words, when set to 0x4000, it means there is a 1/1024 chance your first attempt at mining a block succeeds.
+
+We get this value because 0x4000 in hexadecimal is equivalent to 1024 in decimal. The reciprocal of 1024 is obviously 1/1024, which suggests on average you can expect a successful mining operation after 1024 hash computations. How fast you can mine that block depends on how fast your computer can produce on average 1024 hash computations.
+
+Think of this value as the “seed” value for determining the difficulty to mine any block on the chain. Not every block will have this difficulty; instead, this value gets fed elsewhere in the Ethereum client to algorithmically determine the difficulty for a subsequent block. The difficulty of mining a block changes as the blockchain grows.
+
+mixhash, nonce
+
+mixhash and nonce are used together to determine if the block was mined properly. The reason we have both is that if an attacker forges blocks with a false nonce, it can still be computationally costly for other nodes in the network to discover that the nonce was falsified. mixhash is an intermediary calculation to finding the nonce that is not as costly to determine. Thus, if other nodes on the network discover an errant mixhash when validating a block, they can discard the block without doing additional work to checking the nonce.
+
+These are meaningless in the genesis block, but making them random values is a good idea so that other peers don’t accidentally connect to your chain by having the same exact genesis.json file.
+
+parentHash
+
+The Keccak 256-bit hash of the previous block’s header. This is meaningless in the genesis block, since block 0 has no parent. However, the goal in creating the genesis block was to make it have the same format as any other block, so we have this field and assign it a value.
+
+gasLimit
+
+The maximum number of computations any block on that chain can support.
+
+coinbase
+
+The ether rewards gained from “mining” the genesis block go to the 160-bit coinbase address. This is meaningless in the genesis block (especially since you’re at liberty to allocate as much ether as you want to any account), but again, the goal was to make the genesis block look identical to any other block on the blockchain, so this values exist.
+
+Timestamp
+The output of the Unix time() function when the block was created.
 
 ----
 References: 
