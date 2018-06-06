@@ -1,7 +1,7 @@
-#DEFINITION of '51% Attack'
+# DEFINITION of '51% Attack'
 51% attack refers to an attack on a blockchain – usually bitcoin's, for which such an attack is still hypothetical – by a group of miners controlling more than 50% of the network's mining hashrate, or computing power. The attackers would be able to prevent new transactions from gaining confirmations, allowing them to halt payments between some or all users. They would also be able to reverse transactions that were completed while they were in control of the network, meaning they could double-spend coins.
 
-BREAKING DOWN '51% Attack'
+# BREAKING DOWN '51% Attack'
 Bitcoin and other cryptocurrencies are based on blockchains, a form of distributed ledger. These digital files record every transaction made on a cryptocurrency's network and are available to all users – and the general public – for review, meaning that no one can spend a coin twice. (So-called "private blockchains" introduce permissions to prevent certain users of the general public from seeing all the data on a blockchain.)
 
 As its name implies, a blockchain is a chain of blocks, bundles of data that record all completed transactions during a given period of time (for bitcoin, a new block is generated approximately every10 minutes). Once a block is finalized – "mined," in the jargon – it cannot be altered, since a fraudulent version of the public ledger would quickly be spotted and rejected by the network's users. 
@@ -13,11 +13,11 @@ Changing historical blocks, transactions locked in prior to the start of the att
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
 
 
-You are a miner, suppose you have just found the blokc.
+You are a miner, suppose you have just found the block.
  -Instead of accouncing block to the network and receiving reward, keep it secret
  - Try to find two blocks in a row before the networks finds the next one
 
-This is called selfish mining or block-witholding
+This is called ***selfish mining*** or ***block-witholding***
 
 ![picture](block_withold.png)
 
