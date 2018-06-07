@@ -12,6 +12,12 @@ Changing historical blocks, transactions locked in prior to the start of the att
 
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
 
+# 34% Attack 
+
+The tangle, a distributed ledger that is fundamentally distinct from a blockchain but designed to accomplish similar goals, could theoretically succumb to an attacker deploying over a third of the network's hashrate, referred to as a 34% attack.
+
+
+# SELFISH MINING
 
 You are a miner, suppose you have just found the block.
  -Instead of accouncing block to the network and receiving reward, keep it secret
@@ -59,12 +65,7 @@ The mining pool ghash.io briefly exceeding 50% of the bitcoin network's computin
 Krypton and Shift <br />
 Krypton and Shift, two blockchains based on ethereum, suffered 51% attacks in August 2016.
 
-# 34% Attack <br />
-The tangle, a distributed ledger that is fundamentally distinct from a blockchain but designed to accomplish similar goals, could theoretically succumb to an attacker deploying over a third of the network's hashrate, referred to as a 34% attack.
 
-
-
--Selfish Mining
 -Stubborn Mining Model
 -Selfish Mining Defense
 -Game-Theory Based Censorship
