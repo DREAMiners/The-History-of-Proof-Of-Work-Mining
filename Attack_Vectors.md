@@ -12,6 +12,15 @@ Changing historical blocks, transactions locked in prior to the start of the att
 
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
 
+***Ghash.io****
+
+The mining pool ghash.io briefly exceeding 50% of the bitcoin network's computing power in July 2014, leading the pool to voluntarily commit to reducing its share of the network. It said in a statement that it would not reach 40% of the total mining power in the future.
+
+***Krypton and Shift***
+
+Krypton and Shift, two blockchains based on ethereum, suffered 51% attacks in August 2016.
+
+
 # 34% Attack 
 
 The tangle, a distributed ledger that is fundamentally distinct from a blockchain but designed to accomplish similar goals, could theoretically succumb to an attacker deploying over a third of the network's hashrate, referred to as a 34% attack.
@@ -59,16 +68,13 @@ _ If you have >~33% mining power, ***you can lose the race every time and malici
 <br />
 <br />
 
-Ghash.io <br />
-The mining pool ghash.io briefly exceeding 50% of the bitcoin network's computing power in July 2014, leading the pool to voluntarily commit to reducing its share of the network. It said in a statement that it would not reach 40% of the total mining power in the future.
-
-Krypton and Shift <br />
-Krypton and Shift, two blockchains based on ethereum, suffered 51% attacks in August 2016.
-
 
 -Stubborn Mining Model
+
 -Selfish Mining Defense
+
 -Game-Theory Based Censorship
+
 -51% Attacks and Collusions
 
 - Incentivizing Double-Spend Collusion in Bitcoin   https://www.cs.umd.edu/~gasarch/reupapers/katzbitcoin16.pdf
