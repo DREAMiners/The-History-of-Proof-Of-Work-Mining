@@ -12,7 +12,7 @@ Changing historical blocks, transactions locked in prior to the start of the att
 
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
 
-***Ghash.io****
+***Ghash.io***
 
 The mining pool ghash.io briefly exceeding 50% of the bitcoin network's computing power in July 2014, leading the pool to voluntarily commit to reducing its share of the network. It said in a statement that it would not reach 40% of the total mining power in the future.
 
@@ -26,7 +26,7 @@ Krypton and Shift, two blockchains based on ethereum, suffered 51% attacks in Au
 The tangle, a distributed ledger that is fundamentally distinct from a blockchain but designed to accomplish similar goals, could theoretically succumb to an attacker deploying over a third of the network's hashrate, referred to as a 34% attack.
 
 
-# SELFISH MINING
+# SELFISH MINING (BLOCK-WITHHOLDING)
 
 You are a miner, suppose you have just found the block.
  -Instead of accouncing block to the network and receiving reward, keep it secret
@@ -64,6 +64,47 @@ _ If you have >~33% mining power, ***you can lose the race every time and malici
 - (actual math omitted due to complexity)
 
  ![picture](block_withold4.png)
+
+# STUBBORN MINING
+
+Generalising selfish mining strategies
+
+-Include block propagation race in our model
+-Extend selfish mining to include strategies that:
+	-withold blocks longer
+	-attempt to catch up to a longer public chain
+	-are more or less risky with block propagation races
+
+
+Certain strategies outperform selfish mining
+
+-For different hash rates and block race win rates
+-Strategy metric:
+	Strategy A > Strategy B if we earn more BTC on average
+
+#FORMAL MODEL
+
+Main Variables
+
+- α (Alice): Attacker's proportion of network hashrate
+- β (Bob): Honest network hashrate
+- ℽ: Proportion of Bob's network that will mine on Alice's block when Alice and Bob have released a block at approximately the same time, resulting in an equal lenght fork
+
+***Markov Chain State Representation***
+
+- ***lead***: how much Alice's chain is ahead of Bob's. Is some integer N <br />
+- ***N'*** There is a fork, and
+- 	The revealed portion of the fork is of equal lenght
+-	Bob's mining power is split on this fork according to ℽ
+- ***N''*** Same as N', but all of Bob's mining power is on their own fork (i.e ℽ=))
+
+
+
+
+
+
+
+
 
 <br />
 <br />
