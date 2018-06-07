@@ -59,7 +59,7 @@ The mining pool ghash.io briefly exceeding 50% of the bitcoin network's computin
 Krypton and Shift <br />
 Krypton and Shift, two blockchains based on ethereum, suffered 51% attacks in August 2016.
 
-#34% Attack <br />
+# 34% Attack <br />
 The tangle, a distributed ledger that is fundamentally distinct from a blockchain but designed to accomplish similar goals, could theoretically succumb to an attacker deploying over a third of the network's hashrate, referred to as a 34% attack.
 
 
