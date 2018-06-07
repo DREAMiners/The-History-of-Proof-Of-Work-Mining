@@ -51,7 +51,8 @@ Krypton and Shift, two blockchains based on ethereum, suffered 51% attacks in Au
 
 The tangle, a distributed ledger that is fundamentally distinct from a blockchain but designed to accomplish similar goals, could theoretically succumb to an attacker deploying over a third of the network's hashrate, referred to as a 34% attack.
 
-
+<br />
+<br />
 # SELFISH MINING (BLOCK-WITHHOLDING)
 
 You are a miner, suppose you have just found the block.
