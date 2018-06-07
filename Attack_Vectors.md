@@ -1,4 +1,4 @@
-# 51% Attack
+# 51% (double spend) Attack 
 51% attack refers to an attack on a blockchain by a group of miners controlling more than 50% of the network's mining hashrate, or computing power. The attackers would be able to prevent new transactions from gaining confirmations, allowing them to halt payments between some or all users. They would also be able to reverse transactions that were completed while they were in control of the network, meaning they could double-spend coins.
 
 BREAKING DOWN '51% Attack'  <BR />
@@ -11,6 +11,31 @@ However, by controlling the majority of the computing power on the network, an a
 Changing historical blocks, transactions locked in prior to the start of the attack, would be extremely difficult even in the event of a 51% attack. The further back the transactions are, the more difficult it would be to change them. It would be impossible to change transactions prior to a checkpoint, past which transactions are hard-coded into bitcoin's software.
 
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
+
+***Zencash.com***
+The Zen network was the target of a 51% attack on 2 June at approximately 8:26 pm EDT (03 June 00:26 hrs UTC). The Zen team immediately executed mitigation procedures to significantly increase the difficulty of future attacks on the network.
+Sequence of events:
+
+6/2 (2026 EDT) – Received warning of potential attack from one of our pool operators <br />
+6/2 (2034 EDT) – Immediately initiated investigation and evaluated hash power distribution <br />
+6/2 In parallel, contacted exchanges to increase confirmation times <br />
+6/2 (2042 EDT) – Investigation showed that the suspect transaction was a double spend <br />
+6/3 – present – In progress: Additional forensics and jointly investigating with the affected exchange <br />
+6/3 (0900 EDT) – Released this official announcement about the attacks(edited) <br />
+6/4 (1150 EDT) – Released new finding on the investigation <br />
+6/6 (0946 EDT) – Co-founder, Rob Viglione, issued statement responding to the attacks and dispel misconceptions <br />
+
+All Equihash-based networks are exposed to an influx of new Equihash power and therefore the best short-term mitigation strategy was to recommend that all exchanges increase their minimum required confirmations to at least 100.
+
+At the time of the attack the Zen network hash rate was 58MSol/s. It is possible that the attacker had a private mining operation large enough to conduct the attack and/or supplement with rental hash power.  Net hash rate is derived from the last mined block and therefore live hash rate statistics are not available.
+
+The suspect pool address is znkMXdwwxvPp9jNoSjukAbBHjCShQ8ZaLib. Between blocks 318165 and 318275, the attacker(s) caused multiple reorganizations of the blockchain, reverting 38 blocks in the longest reorganization. In block 318204 and 318234 the attacker(s) performed double-spend attacks.
+
+Note: Bittrex had transaction confirmation of 150 prior to the attack and therefore was not the target of the attack.
+
+***Bitcoin Gold***
+
+***Verge***
 
 ***Ghash.io***
 
@@ -137,3 +162,4 @@ Main Variables
 Reference: <br />
 https://www.investopedia.com/terms/1/51-attack.asp#ixzz5HVYLPkf3 
 https://cyber.stanford.edu/sites/default/files/20180124_bpase_game_theoretical_attacks_on_bitcoin.pdf
+https://blog.zencash.com/zencash-statement-on-double-spend-attack/
