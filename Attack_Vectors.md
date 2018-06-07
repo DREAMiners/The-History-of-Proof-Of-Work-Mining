@@ -21,8 +21,8 @@ Sequence of events:
 6/2 (2034 EDT) – Immediately initiated investigation and evaluated hash power distribution <br />
 6/2 In parallel, contacted exchanges to increase confirmation times <br />
 6/2 (2042 EDT) – Investigation showed that the suspect transaction was a double spend <br />
-6/3 – present – In progress: Additional forensics and jointly investigating with the affected exchange <br />
-6/3 (0900 EDT) – Released this official announcement about the attacks(edited) <br />
+6/3 Additional forensics and jointly investigating with the affected exchange <br />
+6/3 (0900 EDT) – Released this official announcement about the attacks <br />
 6/4 (1150 EDT) – Released new finding on the investigation <br />
 6/6 (0946 EDT) – Co-founder, Rob Viglione, issued statement responding to the attacks and dispel misconceptions <br />
 
