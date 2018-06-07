@@ -82,7 +82,7 @@ Certain strategies outperform selfish mining
 -Strategy metric:
 	Strategy A > Strategy B if we earn more BTC on average
 
-#FORMAL MODEL
+# FORMAL MODEL
 
 Main Variables
 
@@ -98,19 +98,25 @@ Main Variables
 -	Bob's mining power is split on this fork according to ℽ
 - ***N''*** Same as N', but all of Bob's mining power is on their own fork (i.e ℽ=))
 
+![picture](formal_model1.png)
+ 
+![picture](selfish_mining_Markov_model.png)
+ 
+![picture](lead_stubborn_strategy.png)
 
+![picture](trail_stubborn_equal_fork_stubborn.png)
+ 
+![picture](dominant_strategy_space.png)
 
-
-
-
-
+![picture](dominant_strategy_space2.png)
+ 
 
 
 <br />
 <br />
 
 
--Stubborn Mining Model
+
 
 -Selfish Mining Defense
 
