@@ -1,4 +1,4 @@
-# '51% Attack'
+# 51% Attack
 51% attack refers to an attack on a blockchain by a group of miners controlling more than 50% of the network's mining hashrate, or computing power. The attackers would be able to prevent new transactions from gaining confirmations, allowing them to halt payments between some or all users. They would also be able to reverse transactions that were completed while they were in control of the network, meaning they could double-spend coins.
 
 BREAKING DOWN '51% Attack'  <BR />
