@@ -15,7 +15,7 @@
 | [Genesis Block](Genesis_block.asciidoc) | # ||
 | [Attack Vectors](Attack_Vectors.md) | # |  |
 | [Algorithms & Coins](Algorithms&Coins) | # |  |
-| [Mining_Pools](mining_pools.md) | # |  |
+| [Mining Pools](mining_pools.md) | # |  |
 
 
 1) Genesis block - Satoshi Nakamoto & Bitcoin mining
