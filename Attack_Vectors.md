@@ -13,6 +13,7 @@ Changing historical blocks, transactions locked in prior to the start of the att
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
 
 ***Zencash.com***
+
 The Zen network was the target of a 51% attack on 2 June at approximately 8:26 pm EDT (03 June 00:26 hrs UTC). The Zen team immediately executed mitigation procedures to significantly increase the difficulty of future attacks on the network.
 Sequence of events:
 
