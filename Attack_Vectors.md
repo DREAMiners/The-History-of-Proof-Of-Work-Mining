@@ -12,7 +12,7 @@ Changing historical blocks, transactions locked in prior to the start of the att
 
 On the other hand, a form of a 51% attack is possible with less than 50% of the network's mining power, but with a lower probability of success.
 
-***Zencash.com***
+ZenCash
 
 The Zen network was the target of a 51% attack on 2 June at approximately 8:26 pm EDT (03 June 00:26 hrs UTC). The Zen team immediately executed mitigation procedures to significantly increase the difficulty of future attacks on the network.
 Sequence of events:
@@ -33,6 +33,9 @@ At the time of the attack the Zen network hash rate was 58MSol/s. It is possible
 The suspect pool address is znkMXdwwxvPp9jNoSjukAbBHjCShQ8ZaLib. Between blocks 318165 and 318275, the attacker(s) caused multiple reorganizations of the blockchain, reverting 38 blocks in the longest reorganization. In block 318204 and 318234 the attacker(s) performed double-spend attacks.
 
 Note: Bittrex had transaction confirmation of 150 prior to the attack and therefore was not the target of the attack.
+
+***14.06 2018*** ZenCash Team releases a proposal to modify Satoshi Consensus to enhance protection against 51% attacks https://zencash.com/assets/files/A-Penalty-System-for-Delayed-Block-Submission-by-ZenCash.pdf
+
 
 ***Bitcoin Gold***
 
